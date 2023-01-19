@@ -1,0 +1,168 @@
+/* General Styling */
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #151515;
+}
+h1{
+    font-size: 4em;
+    color:#FAFAFA;
+    line-height: 0px;
+}
+
+h2{
+    font-size: 2em;
+    color: #FAFAFA;
+}
+
+ul{
+    padding-left: 0px;
+}
+
+li{
+    font-size: 1.2em;
+    color: #FAFAFA;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
+/* START OF MOBILE VERSION */
+
+/* Banner/Header */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero section */
+
+.hero{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 50px;
+}
+
+#left{
+    width: 255px;
+    height: 251px;
+    background-image: url(img/Hand.gif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+#row1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+
+#sticker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 130px;
+    height: 66px;
+
+    background: #FE3B00;
+    border-radius: 40px;
+    transform: rotate(-5deg);
+}
+
+#sticker p{
+    font-size: 1.50em;
+}
+
+#row3 p{
+    font-size: 1.2em;
+    color: #FAFAFA;
+}
+
+/* Projects Section */
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+footer p,a {
+    font-size: 1.2em;
+    color: #FAFAFA;
+}
+
+footer p{
+    padding: 10px;
+    border-left: #FAFAFA;
+}
+
+
+/* START OF DESKTOP VERSION */
+
+@media only screen and (min-width: 600px) {
+    .hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    }
+
+    #left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+    }
+
+    #right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    }
+
+    .projects{
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+        justify-content: center;
+    }
+    
+    #column1,#column2,#column3{
+        padding: 3em;
+    }
+}
