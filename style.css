@@ -11,7 +11,7 @@ h1{
 }
 
 h2{
-    font-size: 2em;
+    font-size: 1.5em;
     color: #FAFAFA;
 }
 
@@ -20,7 +20,7 @@ ul{
 }
 
 li{
-    font-size: 1.2em;
+    font-size: 1em;
     color: #FAFAFA;
     list-style: none;
 }
@@ -38,7 +38,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img/still-banner.png);
+    background-image: url(img/banner.gif);
     background-size: contain;
     background-position: center;
 }
@@ -51,7 +51,7 @@ header{
     align-items: center;
     justify-content: center;
     padding: 0px;
-    gap: 50px;
+    gap: 40px;
 }
 
 #left{
@@ -101,6 +101,7 @@ header{
 #row3 p{
     font-size: 1.2em;
     color: #FAFAFA;
+    margin: auto;
 }
 
 /* Projects Section */
@@ -110,6 +111,10 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#column1,#column2,#column3{
+    width: 50%;
 }
 
 footer{
@@ -179,8 +184,10 @@ footer p{
     .hero{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
     padding: 0px;
+    max-width: 1000px;
+    margin: auto;
     }
 
     #left{
@@ -190,11 +197,13 @@ footer p{
         background-size: cover;
         background-position: center;
         border-radius: 20px;
+        filter: grayscale(100%);
     }
 
     #left:hover{
         width: 500px;
-        transition: width .4s ease;
+        filter: grayscale(0%);
+        transition: width, filter, .4s ease;
     }
 
     #right{
@@ -202,6 +211,7 @@ footer p{
     flex-direction: column;
     align-items: flex-end;
     padding: 0px;
+    gap: 0px;
     }
 
     #row1{
@@ -228,6 +238,7 @@ footer p{
     }
     
     #column1,#column2,#column3{
+        width: auto;
         padding: 3em;
     }
 }
