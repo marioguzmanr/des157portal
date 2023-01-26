@@ -206,13 +206,38 @@ footer p{
         background-position: center;
         border-radius: 20px;
         filter: grayscale(100%);
+        animation: smoothOut .8s ease forwards;
     }
 
     #left:hover{
-        width: 500px;
-        filter: grayscale(0%);
-        transition: width, filter, .4s ease;
+        animation: smoothIn .4s ease forwards;
     }
+
+    @keyframes smoothIn {
+        0% {
+          width: 300px;
+          filter: grayscale(100%);
+        }
+        100% {
+          width: 500px;
+          filter: grayscale(0%);
+        }
+      }
+
+      @keyframes smoothOut {
+        0% {
+          width: 500px;
+          filter: grayscale(0%);
+        }
+        25% {
+            width: 500px;
+            filter: grayscale(0%);
+          }
+        100% {
+            width: 300px;
+            filter: grayscale(100%);
+        }
+      }
 
     #right{
     display: flex;

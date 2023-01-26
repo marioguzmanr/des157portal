@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Challenges</title>
+</head>
+<body>
+    <h1>JavaScript Basic Challenges</h1>
+    <h2>Challenge 8</h2>
+
+    <script>
+        var number=prompt("Type any number"," ")
+
+    if (number<10){
+        console.log(`Your number is ${number} which is less than 10`);
+        for (var i = 0; i < 10 ; i++){
+           if( i == number){
+            console.log(`Here is ${number} <---- this is your number`)
+           }
+           else{
+            console.log(`Here is ${i}`);
+           }
+        }
+    } else if (number>9){
+        console.log(`you entered a big number`);
+    } else {
+        console.log(`ERROR: You did not input a number`);
+    }
+    </script>
+</body>
+</html>
