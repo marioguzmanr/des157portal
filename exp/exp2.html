@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1>Experimemt2</h1>
+    <h2>Here is your color look at the bg</h2>
+
+    <script>
+
+        function changeBackground() {
+          var userColor = prompt('Pick a color: red, blue, or yellow' , 'Your color')
+          var convert = userColor.toLowerCase();
+
+          if (convert === "red"){
+            document.body.style.backgroundColor = "red";
+          } else if (convert === "blue"){
+            document.body.style.backgroundColor = 'blue';
+          } else if (convert === "yellow") {
+            document.body.style.backgroundColor = 'yellow';
+          } else {
+            alert('Please chose a color from the list');
+            changeBackground();
+          };
+
+          console.log('JS running');
+          console.log(convert);
+        };
+
+        changeBackground();
+
+    </script>
+</body>
+</html>

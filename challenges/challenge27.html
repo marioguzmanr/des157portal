@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Challenges: Challenge 23</title>
+</head>
+<body>
+    <h1>JavaScript Event Challenges: Challenge 27</h1>
+    
+    <form>
+        <label>Enter a number <input type=text></label>
+        <input type="submit" value="send number">
+    </form>
+
+    <script>
+        var h1= document.querySelector('h1');
+        var form= document.querySelector('form');
+
+        form.addEventListener('submit', function(event)){
+
+            event.preventDefault;
+            var num = parseInt(document.querySelector('input').value);
+
+            if(num){
+                h1.style.fontSize = num + "px";
+
+            } else{
+                alert(`please enter a number`);
+            }
+        }
+    </script>
+</body>
+</html>
