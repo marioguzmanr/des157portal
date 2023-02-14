@@ -13,8 +13,7 @@
             document.querySelector('aside').className="hidden";
         });
     
-        document.querySelector('.close').addEventListener('click' , function(event){
-            event.preventDefault();
+        document.querySelector('.close').addEventListener('click' , function(){
             document.getElementById('madlib').className="hidden";
             document.querySelector('aside').className="background";
         });
