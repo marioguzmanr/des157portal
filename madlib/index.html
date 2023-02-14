@@ -3,34 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    
     <title>Build Mad Lib Script</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-         <h1>Build a Mad Lib Script</h1>
-    </header>
-    <main>
-        <form id="myform">
-            <label for="noun1">Provide a Noun</label>
-            <input type="text" id="noun1">
-            <br>
+    <header class="Top">
+        <h1>A trip to the moon</h1>
+        <p id="description">Let's create a memory out of this world</p>
+   </header>
+    <main class="content">
+        <form id="questions">
+            <div id="column1">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                
 
-            <label for="noun2">Provide another Noun</label>
-            <input type="text" id="noun2">
-            <br>
+                <label for="adj1">Emotion</label>
+                <input type="text" id="adj1">
+                
 
-            <label for="adj">Provide an Adjective</label>
-            <input type="text" id="adj">
-            <br>
+                <label for="adj2">Size</label>
+                <input type="text" id="adj2">
+                
 
-            <label for="verb">Provide a verb</label>
-            <input type="text" id="verb">
-            <br>
-            <input type="submit" value="send">
+                <label for="color">Color</label>
+                <input type="text" id="color">
+
+                <label for="noun1">Noun</label>
+                <input type="text" id="noun1">
+                
+
+                <label for="verb1">Verb</label>
+                <input type="text" id="verb1">
+                
+
+                <label for="noun2">Noun</label>
+                <input type="text" id="noun2">
+
+        </div>
+        <div id="column2">
+            <label for="verb2">Action</label>
+            <input type="text" id="verb2">
+            
+
+            <label for="noun3">Plural object</label>
+            <input type="text" id="noun3">
+            
+
+            <label for="noun4">Noun</label>
+            <input type="text" id="noun4">
+            
+
+            <label for="adj3">Adjective</label>
+            <input type="text" id="adj3">
+
+            <label for="verb3">Verb</label>
+            <input type="text" id="verb3">
+            
+
+            <label for="adj4">Adjective</label>
+            <input type="text" id="adj4">
+        </div>
         </form>
-        <article id="madlib"></article>
+
+        <article class="hidden" id="madlib">
+            <section>
+                <h2>Here is your story</h2>
+            <div id="template"></div>
+                <button class="close">Get another story</button>
+            </section>
+
+        </article>
+
+        <aside class="background">
+            <img src="moon-phases.en.gif" alt="Moon Rotating">
+        </aside>
     </main>
+    <div class="top">
+        <input type="submit" form="questions" class="open" value="To the Moon ->">
+    </div>
     <footer>
     </footer> 
 </body>
