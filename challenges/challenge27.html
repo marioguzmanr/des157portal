@@ -18,18 +18,18 @@
         var h1= document.querySelector('h1');
         var form= document.querySelector('form');
 
-        form.addEventListener('submit', function(event)){
+        form.addEventListener('submit', function(event){
 
-            event.preventDefault;
+            event.preventDefault();
             var num = parseInt(document.querySelector('input').value);
 
             if(num){
                 h1.style.fontSize = num + "px";
-
-            } else{
+            } 
+            else{
                 alert(`please enter a number`);
             }
-        }
+        });
     </script>
 </body>
 </html>
