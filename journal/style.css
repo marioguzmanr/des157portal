@@ -39,6 +39,15 @@ main{
     width: auto;
 }
 
+img{
+    width: 500px;
+    height: auto;
+}
+
+figcaption{
+    padding-bottom: 3em;
+}
+
 /* NAV BAR */
 .nav{
     padding-bottom: 30px;
@@ -194,5 +203,6 @@ main{
         flex-direction: column;
         gap: 50px;
         padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
