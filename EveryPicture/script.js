@@ -33,5 +33,6 @@
     document.querySelector('.slider').addEventListener('mouseout', function(){
         document.querySelector('.animate').style.animationPlayState = 'running';
     });
-    
+    console.log('prueba de sonido uno dos uno dos');
 })();
+
