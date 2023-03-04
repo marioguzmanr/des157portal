@@ -1,0 +1,505 @@
+/*Fonts*/
+
+@font-face {
+font-family: 'Melodrama-Light';
+src: url('../fonts/Melodrama-Light.woff2') format('woff2'),
+        url('../fonts/Melodrama-Light.woff') format('woff'),
+        url('../fonts/Melodrama-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-display: swap;
+        font-style: normal;
+}
+
+@font-face {
+font-family: 'Melodrama-Regular';
+src: url('../fonts/Melodrama-Regular.woff2') format('woff2'),
+        url('../fonts/Melodrama-Regular.woff') format('woff'),
+        url('../fonts/Melodrama-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-display: swap;
+        font-style: normal;
+}
+
+@font-face {
+font-family: 'Melodrama-Bold';
+src: url('../fonts/Melodrama-Bold.woff2') format('woff2'),
+        url('../fonts/Melodrama-Bold.woff') format('woff'),
+        url('../fonts/Melodrama-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-display: swap;
+        font-style: normal;
+}
+
+body{
+    background-color: rgb(255, 248, 239);
+    max-height: 100vh;
+}
+
+h1{
+    font-family: 'Melodrama', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 101px;
+    text-align: center;
+    margin: 0;
+}
+/*Nav Bar*/
+
+.topnav {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topnav a{
+    font-family: 'Melodrama', serif;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+/*Nav Bar Interaction*/
+.topnav a:hover {
+    color: gray;
+}
+
+/*Hero*/
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+}
+
+/*Hero text alignment*/
+
+.text_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.subheading{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 90vw;
+}
+
+.subheading h2{
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+/*Graphics Box*/
+
+.graphic_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/*Left Box*/
+
+.left_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+
+.column_graphic_1{
+    background-image: url("imgs/redwood/rw_4.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 70vw;
+    height: 349px;
+    filter: grayscale(100%)
+}
+
+.column_graphic_1:hover{
+    filter: none;
+    border-radius: 20px;
+    transform: rotate(-0.005turn);
+    transition: filter, border-radius,transform .4s ease;
+}
+
+.column_graphic_2{
+    background-image: url("imgs/random/seven.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 70vw;
+    height: 349px;
+    filter: grayscale(100%)
+}
+
+.column_graphic_2:hover{
+    filter: none;
+    border-radius: 20px;
+    transform: rotate(-0.005turn);
+    transition: filter, border-radius,transform .4s ease;
+}
+
+/*Middle Box*/
+
+.middle_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.middle_graphic{
+    background-image: url("imgs/humbolt/hb_1.JPG");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 600px;
+    filter: grayscale(100%)
+}
+
+.middle_graphic:hover{
+    filter: none;
+    border-radius: 20px;
+    transform: rotate(-0.005turn);
+    transition: filter, border-radius,transform .4s ease;
+}
+
+/*Right Box*/
+
+.right-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+}
+
+.column_graphic_3{
+    background-image: url("imgs/highschool/seven.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 70vw;
+    height: 349px;
+    filter: grayscale(100%)
+}
+
+.column_graphic_3:hover{
+    filter: none;
+    border-radius: 20px;
+    transform: rotate(-0.005turn);
+    transition: filter, border-radius,transform .4s ease;
+}
+
+.column_graphic_4{
+    background-image: url("imgs/tahoe_1/th_5.JPG");
+    background-size: cover;
+    background-position: center;
+    width: 70vw;
+    height: 349px;
+    filter: grayscale(100%)
+}
+
+.column_graphic_4:hover{
+    filter: none;
+    border-radius: 20px;
+    transform: rotate(-0.005turn);
+    transition: filter, border-radius,transform .4s ease;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+#link{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 60px;
+    gap: 2px;
+    /* margin-top: 5vh;
+    margin-bottom: 5vh; */
+}
+
+#link a{
+    font-family: 'Satoshi';
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #6a6a6a;
+}
+
+#link a:hover{
+    color:black;
+}
+
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: rgb(255, 248, 239);
+    }
+    
+    h1{
+        font-family: 'Melodrama', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 5em;
+        line-height: 101px;
+        text-align: center;
+        margin: 0;
+        z-index: -1;
+    }
+    /*Nav Bar*/
+    
+    .topnav {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .topnav a{
+        font-family: 'Melodrama', serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    /*Nav Bar Interaction*/
+    #ellipse{
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        z-index: 2;
+        top: -15em;
+    }
+
+    #ellipse img{
+        width: 100vw;
+        color: rgb(255, 248, 239);;
+    }
+    
+    /*Hero*/
+    
+    .section {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 0px;
+        width: 100%;
+        max-height: 100vh;
+    }
+    
+    /*Hero text alignment*/
+    
+    .text_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    
+    .heading{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .subheading{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 40vw;
+    }
+    
+    .subheading h2{
+        font-family: 'Satoshi';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3em;
+        line-height: 34px;
+        text-align: center;
+    }
+    
+    /*Graphics Box*/
+    
+    .graphic_box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        padding-top: 50px;
+    }
+    
+    /*Left Box*/
+    
+    .left_box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+    }
+
+    .left_box img{
+        display: block;
+        max-width: 22.5vw;
+        max-height: 25vh;
+        width: max-content;
+        height: auto;
+    }
+    
+    
+    .left_box img:hover{
+        filter: none;
+        border-radius: 20px;
+        transform: rotate(-0.005turn);
+        transition: filter, border-radius,transform .4s ease;
+    }
+    
+    .column_graphic_2{
+        background-image: url("imgs/random/seven.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 22.5vw;
+        height: 25vh;
+        filter: grayscale(100%)
+    }
+    
+    .column_graphic_2:hover{
+        filter: none;
+        border-radius: 20px;
+        transform: rotate(-0.005turn);
+        transition: filter, border-radius,transform .4s ease;
+    }
+    
+    /*Middle Box*/
+    
+    .middle_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px 10px;
+        gap: 10px;
+    }
+    
+    .middle_graphic{
+        background-image: url("imgs/humbolt/hb_1.JPG");
+        background-size: cover;
+        background-position: center;
+        width: 40vw;
+        height: 50vh;
+        filter: grayscale(100%)
+    }
+    
+    .middle_graphic:hover{
+        filter: none;
+        border-radius: 20px;
+        transform: rotate(-0.005turn);
+        transition: filter, border-radius,transform .4s ease;
+    }
+    
+    /*Right Box*/
+    
+    .right-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+    }
+    
+    .column_graphic_3{
+        background-image: url("imgs/highschool/seven.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 22.5vw;
+        height: 25vh;
+        filter: grayscale(100%)
+    }
+    
+    .column_graphic_3:hover{
+        filter: none;
+        border-radius: 20px;
+        transform: rotate(-0.005turn);
+        transition: filter, border-radius,transform .4s ease;
+    }
+    
+    .column_graphic_4{
+        background-image: url("imgs/tahoe_1/th_5.JPG");
+        background-size: cover;
+        background-position: center;
+        width: 22.5vw;
+        height: 25vh;
+        filter: grayscale(100%)
+    }
+    
+    .column_graphic_4:hover{
+        filter: none;
+        border-radius: 20px;
+        transform: rotate(-0.005turn);
+        transition: filter, border-radius,transform .4s ease;
+    }
+    
+    /* Footer */
+    
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    
+    #link{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px 60px;
+        gap: 10px;
+        border-right: 1px solid #6a6a6a;
+        padding-top: 1em;
+        /* margin-top: 5vh;
+        margin-bottom: 5vh; */
+    }
+    
+    #link a{
+        font-family: 'Satoshi';
+        font-size: 1em;
+        text-align: center;
+        text-decoration: none;
+        color: #6a6a6a;
+    }
+    
+    #link a:hover{
+        color:black;
+    }
+}

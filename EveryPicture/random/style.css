@@ -1,0 +1,500 @@
+/*Fonts*/
+
+@font-face {
+    font-family: 'Melodrama-Light';
+    src: url('../fonts/Melodrama-Light.woff2') format('woff2'),
+            url('../fonts/Melodrama-Light.woff') format('woff'),
+            url('../fonts/Melodrama-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-display: swap;
+            font-style: normal;
+    }
+    
+    @font-face {
+    font-family: 'Melodrama-Regular';
+    src: url('../fonts/Melodrama-Regular.woff2') format('woff2'),
+            url('../fonts/Melodrama-Regular.woff') format('woff'),
+            url('../fonts/Melodrama-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-display: swap;
+            font-style: normal;
+    }
+    
+    @font-face {
+    font-family: 'Melodrama-Bold';
+    src: url('../fonts/Melodrama-Bold.woff2') format('woff2'),
+            url('../fonts/Melodrama-Bold.woff') format('woff'),
+            url('../fonts/Melodrama-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-display: swap;
+            font-style: normal;
+    }
+    
+    body{
+        background-color: rgb(255, 248, 239);
+    }
+    
+    h1{
+        font-family: 'Melodrama', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3em;
+        line-height: 101px;
+        text-align: center;
+        margin: 0;
+    }
+    /*Nav Bar*/
+    
+    .topnav {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .topnav a{
+        font-family: 'Melodrama', serif;
+        font-size: 40px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    /*Nav Bar Interaction*/
+    .topnav a:hover {
+        font-family: 'Melodrama', serif;
+        font-size: 40px;
+        text-decoration: none;
+        color: gray;
+    }
+    
+    /* Container */
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin-top: 5%;
+        width: 100%;
+    }
+    
+    /* Page hero box */
+    
+    .page_hero{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    .page_hero_block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100vw;
+    }
+    
+    
+    /* Date */
+    
+    .date{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px;
+        gap: 10px;    
+        margin: 0;
+        width: 20vw;
+    }
+    
+    .date h3{
+        font-family: 'Melodrama';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2em;
+        line-height: 68px;
+        text-align: center;
+    }
+    
+    /* Description */
+    
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    /* content */
+    
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .content p{
+        font-family: 'Satoshi';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        text-align: center;
+    }
+    
+    /* Graphics box */
+    
+    .graphics{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5em;
+        gap: 10px;
+    }
+    
+    
+    /* Left box */
+    
+    .left_box{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+    }
+    
+    .photo1{
+        background-image: url("../imgs/random/eleven.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 50vw;
+        height: 550px;
+    }
+    
+    .photo2{
+        background-image: url("../imgs/random/fourteen.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 50vw;
+        height: 550px;
+    }
+    
+    /* middle_box */
+    
+    
+    .middle_box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+    }
+    
+    .photo3{
+        background-image: url("../imgs/random/twuelve.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 320px;
+    }
+    
+    .photo4{
+        background-image: url("../imgs/random/one.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 320px;
+    }
+    
+    /* right_box */
+    
+    
+    .right_box{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .photo5{
+        background-image: url("../imgs/random/seven.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 550px;
+    }
+    
+    
+    /* Footer */
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin-top: 5%;
+    }
+    
+    #link{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    
+    #link a{
+        font-family: 'Satoshi';
+        font-size: 1em;
+        text-align: center;
+        text-decoration: none;
+        color: #6a6a6a;
+    }
+    
+    #link a:hover{
+        color:black;
+    }
+    
+    @media only screen and (min-width: 600px) {
+        body{
+            background-color: rgb(255, 248, 239);
+        }
+        
+        h1{
+            font-family: 'Melodrama', serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 3em;
+            line-height: 101px;
+            text-align: left;
+            margin: 0;
+        }
+        /*Nav Bar*/
+        
+        .topnav {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .topnav a{
+            font-family: 'Melodrama', serif;
+            font-size: 40px;
+            text-decoration: none;
+            color: black;
+        }
+        
+        /*Nav Bar Interaction*/
+        .topnav a:hover {
+            font-family: 'Melodrama', serif;
+            font-size: 40px;
+            text-decoration: none;
+            color: gray;
+        }
+        
+        /* Container */
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            margin-top: 5%;
+            width: 100%;
+        }
+        
+        /* Page hero box */
+        
+        .page_hero{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+        }
+        
+        .page_hero_block{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 80px;
+            width: 50vw;
+        }
+        
+        
+        /* Date */
+        
+        .date{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-left: 10px;
+            gap: 10px;    
+            margin: 0;
+            width: 20vw;
+        }
+        
+        .date h3{
+            font-family: 'Melodrama';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2em;
+            line-height: 68px;
+            text-align: center;
+        }
+        
+        /* Description */
+        
+        .description{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 10px;
+        }
+        
+        /* content */
+        
+        .content{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 10px;
+            
+        }
+        
+        .content p{
+            font-family: 'Satoshi';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            text-align: left;
+        }
+        
+        /* Graphics box */
+        
+        .graphics{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 5em;
+            gap: 10px;
+        }
+        
+        
+        /* Left box */
+        
+        .left_box{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 10px;
+        }
+        
+        .photo1{
+            background-image: url("../imgs/random/eleven.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 22vw;
+            height: 550px;
+        }
+        
+        .photo2{
+            background-image: url("../imgs/random/fourteen.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 22vw;
+            height: 550px;
+        }
+        
+        /* middle_box */
+        
+        
+        .middle_box{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 10px;
+        }
+        
+        .photo3{
+            background-image: url("../imgs/random/twuelve.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 22vw;
+            height: 320px;
+        }
+        
+        .photo4{
+            background-image: url("../imgs/random/one.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 22vw;
+            height: 320px;
+        }
+        
+        /* right_box */
+        
+        
+        .right_box{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        
+        .photo5{
+            background-image: url("../imgs/random/seven.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 22vw;
+            height: 550px;
+        }
+        
+        
+        /* Footer */
+        
+        footer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+            margin-top: 5%;
+        }
+        
+        #link{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px 60px;
+            gap: 10px;
+            border-right: 1px solid #6a6a6a;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+        
+        #link a{
+            font-family: 'Satoshi';
+            font-size: 1em;
+            text-align: center;
+            text-decoration: none;
+            color: #6a6a6a;
+        }
+        
+        #link a:hover{
+            color:black;
+        }
+    }
