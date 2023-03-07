@@ -1,6 +1,6 @@
 /*Fonts*/
 :root {
-    --sliderwidth: -14200 ;
+    --sliderwidth: ;
 }
 
 @font-face {
@@ -39,7 +39,7 @@ src: url('../fonts/Melodrama-Bold.woff2') format('woff2'),
 }
 .animate {
     animation-name: moveSlider;
-    animation-duration: 60s;
+    animation-duration: 45s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -47,7 +47,7 @@ src: url('../fonts/Melodrama-Bold.woff2') format('woff2'),
 body{
     background-color: rgb(255, 248, 239);
     max-height: 100vh;
-    scroll-behavior: smooth
+    overflow-x: hidden;
 }
 
 h1{
@@ -216,7 +216,6 @@ footer{
 @media only screen and (min-width: 600px) {
     body{
         background-color: rgb(255, 248, 239);
-        scroll-behavior: smooth
     }
     
     h1{

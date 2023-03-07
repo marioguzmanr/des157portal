@@ -15,7 +15,7 @@
     // Get the :root from the stylesheet (which has CSS variables listed)
     const root = document.querySelector(':root');
     // set the left position of the slider so half of it is off the left side of the window.
-    const endLeftPos = `-${sliderWidth}px`;
+    const endLeftPos = `-${sliderWidth + 19600}px`;
     // set the custom variable inside the stylesheet. 
     // This variable is used in the @keyframe animation   
     root.style.setProperty('--sliderwidth', endLeftPos);
