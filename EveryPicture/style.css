@@ -1,6 +1,6 @@
 /*Fonts*/
 :root {
-    --sliderwidth: ;
+    --sliderwidth: -14200 ;
 }
 
 @font-face {
@@ -39,7 +39,7 @@ src: url('../fonts/Melodrama-Bold.woff2') format('woff2'),
 }
 .animate {
     animation-name: moveSlider;
-    animation-duration: 30s;
+    animation-duration: 60s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -47,6 +47,7 @@ src: url('../fonts/Melodrama-Bold.woff2') format('woff2'),
 body{
     background-color: rgb(255, 248, 239);
     max-height: 100vh;
+    scroll-behavior: smooth
 }
 
 h1{
@@ -64,7 +65,13 @@ h1{
     width: 100vw;
     position: absolute;
     z-index: 2;
-    top: -9em;
+    top: 6em;
+    margin: 0px;
+    left: 0;
+}
+
+#ellipse img{
+    width: 100vw;
 }
 
 /*Nav Bar*/
@@ -106,6 +113,7 @@ h1{
     flex-direction: column;
     align-items: center;
     padding: 30px;
+    margin-top: 180px;
 }
 
 .heading{
@@ -144,7 +152,7 @@ h1{
     position: absolute;
     top: 100px;
     left: 0; /* this is the only change! */
-    height: 400px;
+    height: 600px;
     /* transition: all 60s linear; */
 }
 
@@ -153,7 +161,7 @@ h1{
     position: absolute;
     top:0;
     /*right: 0;  this is the only change! */
-    height: 400px;
+    height: 600px;
 }
 
 .slider div img {
@@ -208,6 +216,7 @@ footer{
 @media only screen and (min-width: 600px) {
     body{
         background-color: rgb(255, 248, 239);
+        scroll-behavior: smooth
     }
     
     h1{
@@ -243,7 +252,11 @@ footer{
         height: auto;
         position: absolute;
         z-index: 2;
-        top: -9em;
+        top: -230px;
+    }
+
+    #ellipse img{
+        width: 100vw;
     }
     
     /*Hero*/
@@ -258,7 +271,7 @@ footer{
         position: absolute;
         top: 100px;
         left: 0; /* this is the only change! */
-        height: 40vh;
+        height: 60vh;
         /* transition: all 60s linear; */
     }
     
