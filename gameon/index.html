@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game of PIG</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <section id="pageflow">
+        <div id="instructions">
+            <div id="head">
+                <h1>Game of PIG =--=-=-=- (Race Cars)</h1> 
+                <img src="flag.png">
+            </div>
+            <p>There are two players racing to the finish line. Each turn, the player rolls the dice to determine how far their race car moves along the track. The total of the roll is added to the player's score, representing the distance they've covered. However, if either die comes up as a "one," the player's turn is over, and their car needs a change of tires, causing them to lose ground. The other player then takes their turn.
+            </p>            
+            <p>After each roll, the current player can choose to roll again (assuming they didn't roll a "one") or pass to the other player if they feel they've pushed their luck too far. The first player to cross the finish line or get a score of 30 points or higher wins the race and the championship trophy.
+            </p>
+
+            <p>But beware! If you roll two "ones", your current score gets reset to zero, representing a devastating crash that sets you back in the race. So, be careful and make strategic choices as you race towards the finish line!</p>
+        </div>
+
+        <div id="block">
+            <div id="gamecontrol">
+                <h2>Start a Race</h2>
+                <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+            </div>
+
+            <div id="gamecontroltwo">
+                <div id="game"></div>
+                <div id="actions"></div>
+                <div id="score"><h2>Race Progress...</h2></div>
+            </div>
+        </div>
+    </section>
+
+    <audio id="startSound" src="start.mp3"></audio>
+    <audio id="diceRoll" src="carstart.mp3"></audio>
+    <audio id="crash" src="crash.mp3"></audio>
+    <audio id="win" src="win.wav"></audio>
+
+    <audio id="background" autoplay loop>
+        <source src="background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <footer>
+        <a href="sources.html">Sound Sources</a>
+    </footer>
+    </body>
+    </html>

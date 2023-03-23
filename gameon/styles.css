@@ -1,0 +1,131 @@
+body {
+    font-family: 'Sora', sans-serif;
+    color: #333;
+    padding: 50px;
+    line-height: 1.5em;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Gloock', serif;
+    line-height: 1.2em;
+}
+
+button { 
+    padding: 10px;
+}
+
+div {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Button */
+
+button{
+    border-radius: 8px;
+    border: 0px ;
+    background-color: #333;
+    color: white;
+}
+
+#pageflow{
+    display: flex;
+}
+
+#head{
+display: flex;
+gap: 50px;
+align-items: center;
+justify-content: space-between;
+padding: 0px;
+padding-left: 0px;
+}
+
+#head, img{
+    width: auto; 
+    height: auto;
+}
+
+#instructions{
+    width: 50%;
+}
+
+#block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gamecontrol{
+    background-color: white;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#gamecontroltwo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    gap: 20px;
+}
+
+#score {
+    background-color: white;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .1rem #fff,
+    0 0 1rem #bc13fe,
+    0 0 0.2rem #bc13fe,
+    0 0 1.3rem #bc13fe,
+    inset 0 0 .5rem #bc13fe; 
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 50%;
+    /* margin-left: 15em;
+    margin-right: 15em; */
+}
+
+#game {
+    background-color: white;
+    width: 50%;
+    filter: drop-shadow(0 0 0.75rem #00000025);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#actions {
+    background-color: white;
+    filter: drop-shadow(0 0 0.75rem #00000025);
+    width: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#dices{
+    display: flex;
+    gap: 50px;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
