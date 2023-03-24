@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+h1{
+  font-family: 'Melodrama', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4em;
+  line-height: auto;
+  text-align: center;
+  margin: 0;
+  z-index: 9999;
+}
+
+h2{
+  font-family: 'Melodrama', serif;
+  font-style: normal;
+  font-size: 3em;
+  line-height: auto;
+}
+
+nav{
+  padding: 20px;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 300%;
+  transform: translate3d(0, 0, 0);
+  scroll-snap-type: x mandatory;
+}
+
+.section {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  height: 100%;
+  text-align: center;
+  scroll-snap-align: start;
+}
+/* Page hero box */
+        
+.hero{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.hero_block{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 20px;
+  width: 50%;
+}
+
+
+/* Date */
+
+.date{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 10px;
+  gap: 10px;    
+  margin: 0;
+  width: 40vw;
+}
+
+.date h3{
+  font-family: 'Melodrama';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 68px;
+  text-align: center;
+}
+
+
+/* Description */
+
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+}
+
+/* content */
+
+.content{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  
+}
+
+.content p{
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+/* PHOTOS */
+
+#ellipse{
+  width: 100vw;
+  position: absolute;
+  z-index: 2;
+  top: 0.5em;
+  margin: 0px;
+  left: 0;
+}
+
+#ellipse,img{
+  width: 100vw;
+}
+/* Graphics box */
+        
+.graphics{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  gap: 10px;
+}
+
+
+/* Left box */
+
+.left_box{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+.photo1{
+  background-image: url("../images/20.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 15vw;
+  height: 350px;
+  filter: grayscale(50%);
+}
+
+.photo1:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+.photo2{
+  background-image: url("../images/22.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 15vw;
+  height: 350px;
+  filter: grayscale(50%);
+}
+
+.photo2:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+/* middle_box */
+
+
+.middle_box{
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+.photo3{
+  background-image: url("../images/21.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 26vw;
+  height: 350px;
+  filter: grayscale(50%) ;
+}
+
+.photo3:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+.photo4{
+  background-image: url("../images/23.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 26vw;
+  height: 350px;
+  filter: grayscale(50%);
+}
+
+.photo4:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+/* right_box */
+
+
+.right_box{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.photo5{
+  background-image: url("../images/25.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 15vw;
+  height: 350px;
+  filter: grayscale(50%);
+}
+
+.photo5:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+
+/* Section 2 Photos */
+
+.photo6{
+  background-image: url("../images/six.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 15vw;
+  height: 350px;
+  filter: grayscale(50%);
+}
+
+.photo6:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+.photo7{
+  background-image: url("../images/seven.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 15vw;
+  height: 350px;
+  filter: grayscale(50%);
+}
+
+.photo7:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+.photo8{
+  background-image: url("../images/eight.png");
+  background-size: cover;
+  background-position: center;
+  width: 26vw;
+  height: 350px;
+  filter: grayscale(50%) ;
+}
+
+.photo8:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+.photo9{
+  background-image: url("../images/14.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 26vw;
+  height: 350px;
+  filter: grayscale(50%);
+}
+
+.photo9:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+.photo10{
+  background-image: url("../images/19.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 15vw;
+  height: 350px;
+  filter: grayscale(50%);
+}
+
+.photo10:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+/* section 3 photos */
+.photo11{
+  background-image: url("../images/three.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 15vw;
+  height: 350px;
+  filter: grayscale(50%);
+}
+
+.photo11:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+.photo12{
+  background-image: url("../images/four.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 15vw;
+  height: 350px;
+  filter: grayscale(50%);
+}
+
+.photo12:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+.photo13{
+  background-image: url("../images/27.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 26vw;
+  height: 350px;
+  filter: grayscale(50%) ;
+}
+
+.photo13:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+.photo14{
+  background-image: url("../images/two.webp");
+  background-size: cover;
+  background-position: center;
+  width: 26vw;
+  height: 350px;
+  filter: grayscale(50%);
+}
+
+.photo14:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+.photo15{
+  background-image: url("../images/five.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 15vw;
+  height: 350px;
+  filter: grayscale(50%);
+}
+
+.photo15:hover{
+  filter: none;
+  border-radius: 20px;
+  transform: rotate(-0.005turn) scale(1.06);
+  transition: filter, border-radius,transform .4s ease;
+}
+
+
+
+#section1, #section2, #section3 {
+  background-color: rgb(255, 248, 239)  
+}
